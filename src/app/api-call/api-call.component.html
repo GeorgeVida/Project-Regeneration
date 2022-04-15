@@ -1,0 +1,10 @@
+
+<div class="d-flex" style="flex-wrap: wrap; gap: 40px;">
+
+<div *ngFor="let item of response.results;" class="col-sm-3" >
+ <app-game [data]="item" ></app-game>
+</div>
+
+<!-- <button (click)="requestData()"class="btn btn-primary">Subscribe</button> -->
+
+</div>

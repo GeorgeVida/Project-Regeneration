@@ -1,0 +1,21 @@
+<!-- <pre>{{result|json}}></pre> -->
+<!-- {{result.background_image|json}}
+{{result}} --> 
+
+<!-- {{descr | json}} -->
+ 
+<img [src]=result.data.background_image alt="" >
+
+<h1>{{result.data.name | json}}</h1>
+<p [innerHTML]="descr.description"></p>
+<ul>
+<li><h4>Game Rating: {{result.data.rating + "/5"|json}}</h4></li>
+<li><h4>Genre: {{result.data.genres[0].name|json}},{{result.data.genres[1].name|json}}</h4></li>
+
+
+<li><h4>ESRB Rating: {{result.data.esrb_rating.id}}</h4></li>
+<li><h4>ESRB : {{result.data.esrb_rating.name + " Age"}}</h4></li>
+</ul>
+
+
+
